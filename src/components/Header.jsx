@@ -33,9 +33,11 @@ const Header = () => {
   return (
     <header className={`fixed w-full z-50 transition-all duration-300 ${
       scrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
+
     }`}>
+   
       <div className="container mx-auto px-4 py-4">
-        <div className="flex justify-between items-center">
+        <div className="h-20 flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-2">
             <div className="size-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-xl">A</span>

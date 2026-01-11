@@ -12,11 +12,11 @@ const ServicesPage = () => {
 
   const services = [
     {
-      id: 1,
+ 
       icon: <Code2 className="w-8 h-8" />,
       title: "Digital Transformation & Product Engineering",
       category: "engineering",
-      description: "Transform your business with end-to-end digital solutions",
+      description: "Transform your business with comprehensive end-to-end digital solutions, streamlining operations, enhancing efficiency, and driving growth in the modern digital landscape",
       features: [
         "Product Innovation & Strategy",
         "Custom Application Development",
@@ -29,11 +29,11 @@ const ServicesPage = () => {
       color: "from-blue-500 to-cyan-500"
     },
     {
-      id: 2,
+    
       icon: <Smartphone className="w-8 h-8" />,
       title: "Mobility Solutions",
       category: "mobility",
-      description: "Build engaging mobile experiences for your users",
+      description: "Build mobile experiences that connect with your users like never before. Combining smooth functionality with engaging design, your app can delight users, enhance interaction, and create lasting impact.",
       features: [
         "Mobile-First Design Strategy",
         "Native iOS & Android Development",
@@ -46,11 +46,11 @@ const ServicesPage = () => {
       color: "from-purple-500 to-pink-500"
     },
     {
-      id: 3,
+ 
       icon: <Megaphone className="w-8 h-8" />,
       title: "Digital Marketing",
       category: "marketing",
-      description: "Boost your online presence and drive growth",
+      description: "Boost your online presence and drive growth by leveraging targeted strategies that increase visibility, engage your audience, and convert interest into tangible results. With the right approach, your brand can stand out in the digital landscape, attract loyal customers, and achieve measurable business success",
       features: [
         "Personal Branding & Social Media Marketing",
         "PPC Campaigns (Facebook Ads, Google Ads)",
@@ -63,11 +63,11 @@ const ServicesPage = () => {
       color: "from-green-500 to-emerald-500"
     },
     {
-      id: 4,
+  
       icon: <CheckCircle className="w-8 h-8" />,
       title: "Quality Assurance & Testing",
       category: "qa",
-      description: "Ensure flawless performance and user experience",
+      description: "Ensure your platform performs flawlessly and delivers a seamless user experience at every touchpoint. By prioritizing speed, reliability, and intuitive design, you create an environment where users can effortlessly engage, explore, and achieve their goals—turning every interaction into a positive, lasting impression",
       features: [
         "Custom Software QA Testing",
         "E-learning Platform Testing",
@@ -80,11 +80,11 @@ const ServicesPage = () => {
       color: "from-orange-500 to-red-500"
     },
     {
-      id: 5,
+     
       icon: <Users className="w-8 h-8" />,
       title: "Affordable Management Services",
       category: "management",
-      description: "Scale your team with expert management support",
+      description: " Expand your team’s capabilities with expert management support that drives productivity and efficiency. From overseeing daily operations to providing strategic guidance, our professionals help you scale confidently while keeping your team aligned, motivated, and performing at its best.",
       features: [
         "Dedicated Team Management",
         "Expert Administrative Support",
@@ -97,11 +97,11 @@ const ServicesPage = () => {
       color: "from-indigo-500 to-blue-500"
     },
     {
-      id: 6,
+   
       icon: <Cpu className="w-8 h-8" />,
       title: "AI & Machine Learning",
       category: "ai",
-      description: "Leverage artificial intelligence for smarter solutions",
+      description: "Leverage artificial intelligence to create smarter, more efficient solutions that drive innovation and growth. By harnessing advanced AI technologies, you can automate processes, gain actionable insights, and make data-driven decisions that enhance performance, reduce costs, and unlock new opportunities.",
       features: [
         "AI-Powered Applications",
         "Machine Learning Models",
@@ -195,7 +195,8 @@ const ServicesPage = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
             {processSteps.map((step, index) => (
-              <FadeIn key={index} delay={index * 0.1}>
+              // <FadeIn key={index} delay={index * 0.1}>
+               <FadeIn key={step.id} delay={index * 0.1}>
                 <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
                   <div className="text-3xl font-bold text-primary/20 mb-4">0{index + 1}</div>
                   <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center mb-6">

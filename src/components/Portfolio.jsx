@@ -10,8 +10,8 @@ const Portfolio = () => {
     {
       id: 1,
       category: 'healthcare',
-      title: 'HealthCare Pro',
-      description: 'Complete healthcare management app with AI diagnostics',
+      title: 'HealthCare ',
+      description: 'A next-generation AI-powered healthcare app designed to make health management smarter and simpler. With an elegant Flutter interface and secure Firebase backend, it delivers intelligent diagnostics and seamless care—right at your fingertips.🩺🤖',
       tech: ['Flutter', 'AI', 'Firebase'],
       rating: 4.9,
       image: 'bg-gradient-to-br from-blue-100 to-cyan-100',
@@ -21,7 +21,7 @@ const Portfolio = () => {
       id: 2,
       category: 'ecommerce',
       title: 'ShopNex',
-      description: 'Advanced e-commerce platform with AR try-on',
+      description: "ShopNex brings the future of online shopping to life with immersive AR try-on technology. Powered by React, Node.js, and MongoDB, it creates a fast, interactive, and visually engaging e-commerce experience that boosts confidence before every purchase. 🚀🛍️",
       tech: ['React', 'Node.js', 'MongoDB'],
       rating: 4.8,
       image: 'bg-gradient-to-br from-purple-100 to-pink-100',
@@ -31,7 +31,7 @@ const Portfolio = () => {
       id: 3,
       category: 'fashion',
       title: 'Style AI',
-      description: 'AI-powered fashion recommendation engine',
+      description: 'Style AI is an AI-driven fashion recommendation platform that analyzes trends and user preferences to deliver personalized outfit suggestions. Powered by Python, TensorFlow, and React Native, it makes styling smarter, faster, and more intuitive. 👚✨',
       tech: ['Python', 'TensorFlow', 'React Native'],
       rating: 4.7,
       image: 'bg-gradient-to-br from-green-100 to-emerald-100',
@@ -41,7 +41,7 @@ const Portfolio = () => {
       id: 4,
       category: 'hospitality',
       title: 'HotelSync',
-      description: 'Hotel management system with IoT integration',
+      description: 'HotelSync is an innovative hotel management system that integrates IoT technology to streamline operations, enhance guest satisfaction, and automate daily tasks. Powered by Kotlin, Spring Boot, and AWS, it brings efficiency and intelligence to every aspect of hospitality. 🏨✨',
       tech: ['Kotlin', 'Spring Boot', 'AWS'],
       rating: 4.9,
       image: 'bg-gradient-to-br from-orange-100 to-red-100',
@@ -51,7 +51,7 @@ const Portfolio = () => {
       id: 5,
       category: 'education',
       title: 'Learnify',
-      description: 'Interactive e-learning platform with VR classrooms',
+      description: 'LearnVR is an interactive e-learning platform that brings education to life with VR classrooms, allowing students to engage in immersive, hands-on learning experiences. Built with advanced technologies, it transforms traditional learning into a fully interactive and engaging virtual environment. 🎓🖥️',
       tech: ['Flutter', 'WebRTC', 'GraphQL'],
       rating: 4.8,
       image: 'bg-gradient-to-br from-cyan-100 to-blue-100',
@@ -61,7 +61,7 @@ const Portfolio = () => {
       id: 6,
       category: 'finance',
       title: 'FinTrack Pro',
-      description: 'Personal finance management with blockchain',
+      description:'FinBlock is an innovative personal finance app that uses blockchain technology to provide secure, transparent, and efficient money management. It empowers users to track expenses, manage budgets, and make smarter financial decisions effortlessly.💰🔗',
       tech: ['React Native', 'Blockchain', 'Node.js'],
       rating: 4.9,
       image: 'bg-gradient-to-br from-indigo-100 to-purple-100',
@@ -131,7 +131,8 @@ const Portfolio = () => {
                 whileHover={{ y: -10 }}
                 className="group"
               >
-                <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow">
+<div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow h-full flex flex-col">
+
                   {/* Image/Color Placeholder */}
                   <div className={`h-48 ${item.image} relative overflow-hidden`}>
                     <div className="absolute inset-0 flex items-center justify-center">
@@ -144,7 +145,7 @@ const Portfolio = () => {
                   </div>
 
                   {/* Content */}
-                  <div className="p-6">
+                  <div className="p-6 flex flex-col flex-1">
                     <div className="flex flex-wrap gap-2 mb-4">
                       {item.tech.map((tech) => (
                         <span key={tech} className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">
