@@ -7,16 +7,18 @@ const Portfolio = () => {
   const [activeFilter, setActiveFilter] = useState('all');
 
   const portfolioItems = [
-    {
-      id: 1,
-      category: 'healthcare',
-      title: 'HealthCare ',
-      description: 'A next-generation AI-powered healthcare app designed to make health management smarter and simpler. With an elegant Flutter interface and secure Firebase backend, it delivers intelligent diagnostics and seamless care—right at your fingertips.🩺🤖',
-      tech: ['Flutter', 'AI', 'Firebase'],
-      rating: 4.9,
-      image: 'bg-gradient-to-br from-blue-100 to-cyan-100',
-      link: 'https://play.google.com/store/apps/details?id=com.appsait.healthcare'
-    },
+  {
+  id: 1,
+  category: 'healthcare',
+  title: 'HealthCare',
+  description:
+    'A next-generation AI-powered healthcare app designed to make health management smarter and simpler. With an elegant Flutter interface and secure Firebase backend, it delivers intelligent diagnostics and seamless care—right at your fingertips. 🩺🤖',
+  tech: ['Flutter', 'AI', 'Firebase'],
+  rating: 4.9,
+  image: 'https://i.ibb.co/ZmY4YpN/healthcare.png', // REAL LINK
+  link: 'https://play.google.com/store/apps/details?id=com.appsait.healthcare'
+},
+
     {
       id: 2,
       category: 'ecommerce',
